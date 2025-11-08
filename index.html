@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAGADHA 💗 A to Z 💗 Event Management</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      z-index: 999;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #b30059;  /* Change as you like */
+    }
+
+    nav a:hover {
+      color: #ff007f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navigation -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#services">Services</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+
+  <!-- Header -->
+  <div style="text-align: center;">
+    <header class="site-header">JAGADHA 💗 A to Z 💗 Event Management</header>
+  </div>
+
+  <!-- Offer -->
+  <div class="offer">
+    EVENT | 10% Off
+  </div>
+
+  <!-- ✅ About -->
+  <section class="about" id="about">    <!-- Added ID -->
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <h3>Finest Event Management in Chennai</h3>
+        <p>
+          Are you planning a wedding, a dinner event, a concert or another type of event in Chennai?
+          At A To Z Event Management we are ready to help you with your event management from start to finish.
+          As an event management agency, we can take care of every single detail from the preparation to the cleaning up.
+        </p>
+        <h3>சென்னையில் சிறந்த நிகழ்வு மேலாண்மை</h3>
+          <p> சென்னையில் திருமணம், இரவு உணவு, இசை நிகழ்ச்சி அல்லது வேறு வகையான நிகழ்வைத் திட்டமிடுகிறீர்களா?
+            A முதல் Z நிகழ்வு மேலாண்மை நிறுவனத்தில், தொடக்கம் முதல் முடிவு வரை உங்கள் நிகழ்வு நிர்வாகத்தில் உங்களுக்கு
+            உதவ நாங்கள் தயாராக உள்ளோம். ஒரு நிகழ்வு மேலாண்மை நிறுவனமாக, தயாரிப்பு முதல் சுத்தம் செய்தல் வரை
+            ஒவ்வொரு விவரத்தையும் நாங்கள் கவனித்துக் கொள்ள முடியும். எனவே, நாங்கள் ஏற்பாடு செய்ய விரும்பும் ஒரு நிகழ்வு
+            உங்களிடம் இருந்தால், எங்கள் முன்பதிவு படிவத்தின் மூலம் எங்களைத் தொடர்பு கொள்ளவும்.</p>
+      </div>
+      <div class="about-image">
+        <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Event Table Setup">
+      </div>
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h4>Our Management Team</h4>
+        <p>To keep our promise of consistently delivering the best...</p>
+        <h4>எங்கள் நிர்வாகக் குழு</h4>
+          <p>சிறந்ததை தொடர்ந்து வழங்குவதற்கான எங்கள் வாக்குறுதியைக் காப்பாற்ற, தயாரிப்பு கட்டம் முதல் நிகழ்வின் முடிவு
+            வரை உங்கள் அனைத்துத் தேவைகளுக்கும் உதவத் தயாராகவும் திறமையாகவும் இருக்கும் பயிற்சி பெற்ற நிபுணர்களை
+            மட்டுமே எங்கள் ஊழியர்கள் குழுவில் கொண்டுள்ளோம் என்பதை நாங்கள் உறுதிசெய்துள்ளோம். மேலும், எங்கள் இலக்குகளை
+            தொடர்ந்து அடைய, நாங்கள் நம்பும் தொழில்துறை முன்னணி உற்பத்தியாளர்களால் உருவாக்கப்பட்ட சிறந்த உபகரணங்களை மட்டுமே
+            நாங்கள் பயன்படுத்துகிறோம். இன்று எங்களை வேலைக்கு அமர்த்தினால் நீங்கள் ஏமாற்றமடைய மாட்டீர்கள் என்பதில் உறுதியாக இருங்கள்.</p>
+      </div>
+      <div class="about-image">
+        <img src="{{ url_for('static', filename='images/about1.jpg') }}" alt="Event Table Setup">
+      </div>
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h5>Event Management you can count on</h5>
+        <p>To keep our promise of consistently delivering the best...</p>
+        <h5>நீங்கள் நம்பக்கூடிய நிகழ்வு மேலாண்மை</h5>
+          <p> சிறந்ததை தொடர்ந்து வழங்குவதற்கான எங்கள் வாக்குறுதியைக் காப்பாற்ற, எங்கள் ஊழியர்கள் குழுவில் பயிற்சி பெற்ற நிபுணர்கள் மட்டுமே
+            உள்ளனர் என்பதை உறுதிசெய்துள்ளோம், அவர்கள் தயாரிப்பு கட்டத்திலிருந்து நிகழ்வின் முடிவு வரை உங்கள் அனைத்து தேவைகளுக்கும் உங்களுக்கு
+            உதவ தயாராக உள்ளனர். மேலும், எங்கள் இலக்குகளை தொடர்ந்து அடைய, நாங்கள் நம்பும் தொழில்துறை முன்னணி உற்பத்தியாளர்களால்
+            உருவாக்கப்பட்ட சிறந்த உபகரணங்களை மட்டுமே பயன்படுத்துகிறோம். இன்று எங்களை வேலைக்கு அமர்த்தினால் நீங்கள் ஏமாற்றமடைய
+            மாட்டீர்கள் என்பதில் உறுதியாக இருங்கள். </p>
+      </div>
+      <div class="about-image">
+        <img src="{{ url_for('static', filename='images/about2.jpg') }}" alt="Event Table Setup">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Amenities -->
+  <section class="amenities" id="amenities">
+    <h2>Amenities</h2>
+    <ul>
+      <li>Free Consultation</li>
+      <li>24/7 Availability</li>
+    </ul>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <p>Wedding Planning<p/>
+        <div class="about-image">
+        <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Event Table Setup">
+        </div>
+    <p>Birthday Function<p/>
+        <div class="about-image">
+        <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Event Table Setup">
+        </div>
+    <p>Baby Shower Function<p/>
+        <div class="about-image">
+        <img src="{{ url_for('static', filename='images/Ev_1.jpg') }}" alt="Event Table Setup">
+        </div>
+        <div class="about-image">
+        <img src="{{ url_for('static', filename='images/Ev_2.jpg') }}" alt="Event Table Setup">
+        </div>
+        <div class="about-image">
+        <img src="{{ url_for('static', filename='images/Ev_3.jpg') }}" alt="Event Table Setup">
+        </div>
+        <div class="about-image">
+        <img src="{{ url_for('static', filename='images/Ev_4.jpg') }}" alt="Event Table Setup">
+        </div>
+    <p>All kind of Function</p>
+  </section>
+
+  <!-- Location -->
+  <section class="location" id="location">
+    <h2>Location</h2>
+    <p>We are located in Chennai. Visit us for more details.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+    <p id="resultMsg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 JAGADHA 🌸 A to Z 🌸 Event Management. All Rights Reserved.
+  </footer>
+
+
+<!-- ✅ Fix Navigation Scroll -->
+<script>
+  const sections = document.querySelectorAll("section");
+  const links = document.querySelectorAll("nav a");
+
+  document.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 120;
+      if (pageYOffset >= top) {
+        current = sec.getAttribute("id");
+      }
+    });
+
+    links.forEach(a => {
+      a.classList.remove("active");
+      if (a.getAttribute("href") === "#" + current) {
+        a.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

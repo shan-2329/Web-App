@@ -1,31 +1,15 @@
 from flask import Flask, render_template
+import os
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="templates",
+    static_folder="static"
+)
 
 @app.route("/")
 def home():
     return render_template("index.html")
 
-@app.route("/about")
-def about():
-    return render_template("index.html", section="about")
-
-@app.route("/amenities")
-def amenities():
-    return render_template("index.html", section="amenities")
-
-@app.route("/services")
-def services():
-    return render_template("index.html", section="services")
-
-@app.route("/location")
-def location():
-    return render_template("index.html", section="location")
-
-@app.route("/contact")
-def contact():
-    return render_template("index.html", section="contact")
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
-
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
